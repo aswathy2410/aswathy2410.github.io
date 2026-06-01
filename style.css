@@ -193,3 +193,38 @@ footer {
 .contact-card p {
     line-height: 1.8;
 }
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.social-card {
+    text-decoration: none;
+    color: #222;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.social-card i {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.social-card h3 {
+    margin-bottom: 8px;
+}
+
+.social-card p {
+    color: #666;
+    font-size: 14px;
+}
