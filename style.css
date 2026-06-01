@@ -66,9 +66,16 @@ nav a {
   margin-bottom: 20px;
 }
 
-.hero img {
-  width: 100%;
-  border-radius: 20px;
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-image img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 20px;
 }
 
 .section-title {
