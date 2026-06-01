@@ -1,4 +1,4 @@
-
+```css
 * {
   margin: 0;
   padding: 0;
@@ -44,13 +44,13 @@ header {
 nav {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 18px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   white-space: nowrap;
 }
 
@@ -84,7 +84,7 @@ nav a:hover {
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 8px 8%;
+  padding: 10px 8%;
 }
 
 .section-title {
@@ -96,9 +96,15 @@ nav a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 50px;
-  align-items: start;
+  grid-template-columns: 2.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hero-content {
+  max-width: 720px;
 }
 
 .hero h1 {
@@ -121,11 +127,10 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
 }
 
 .hero-image img {
-  width: 230px;
+  width: 210px;
   max-width: 100%;
   border-radius: 18px;
 }
@@ -368,3 +373,4 @@ footer {
     margin-top: 12px;
   }
 }
+```
