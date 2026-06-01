@@ -206,7 +206,6 @@ footer {
     background: white;
     padding: 30px;
     border-radius: 16px;
-    text-align: center;
     box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
 }
