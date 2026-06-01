@@ -1,8 +1,4 @@
 ```css
-/* =========================
-   Global
-========================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -22,40 +18,39 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   Header
-========================= */
+/* Header */
 
 header {
   width: 100%;
   background: #111;
   color: white;
-  padding: 16px 8%;
+  padding: 14px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
-/* =========================
-   Navigation
-========================= */
+/* Navigation */
 
 nav {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -73,18 +68,18 @@ nav a:hover {
 }
 
 .resume-btn {
+  display: inline-block;
   background: #f4c430;
   color: #111 !important;
-  padding: 8px 14px;
+  padding: 7px 13px;
   border-radius: 20px;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
+  width: fit-content;
 }
 
-/* =========================
-   Layout
-========================= */
+/* Layout */
 
 .container {
   max-width: 1100px;
@@ -93,105 +88,108 @@ nav a:hover {
 }
 
 .section-title {
-  font-size: 34px;
-  margin-bottom: 12px;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-/* =========================
-   Hero Section
-========================= */
+/* Hero */
 
 .hero {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 40px;
+  gap: 28px;
   align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .hero h1 {
-  font-size: 44px;
-  margin-bottom: 8px;
+  font-size: 42px;
+  margin-bottom: 6px;
 }
 
 .hero h2 {
   font-size: 22px;
   color: #666;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .hero-content p {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  line-height: 1.65;
 }
 
 .hero-image {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .hero-image img {
-  width: 250px;
+  width: 230px;
   max-width: 100%;
-  border-radius: 20px;
+  border-radius: 18px;
 }
 
-/* =========================
-   Cards
-========================= */
+/* Cards */
 
 .card {
   background: white;
   border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 14px;
+  padding: 18px;
+  margin-bottom: 12px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 
 .card h2,
 .card h3 {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .card p {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 5px;
 }
 
 .tags {
   font-size: 14px;
   color: #666;
   font-weight: 600;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
-/* =========================
-   Grid
-========================= */
+/* Grid */
 
 .grid {
   display: grid;
-  gap: 16px;
+  gap: 14px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-/* =========================
-   Projects
-========================= */
+/* Projects */
 
 .project-img {
   width: 100%;
-  height: 180px;
+  height: 170px;
   object-fit: cover;
   border-radius: 12px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
+  background: #f0f0f0;
 }
 
 .project-link {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
-/* =========================
-   Contact
-========================= */
+/* Contact */
 
 .contact-card {
   max-width: 800px;
@@ -202,13 +200,14 @@ nav a:hover {
 .contact-item {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  margin: 16px 0;
+  gap: 12px;
+  margin: 12px 0;
 }
 
 .contact-item i {
   width: 24px;
   margin-top: 4px;
+  flex-shrink: 0;
 }
 
 .contact-item a,
@@ -221,9 +220,9 @@ nav a:hover {
 
 .social-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-top: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
 }
 
 .social-card {
@@ -231,18 +230,18 @@ nav a:hover {
   color: #222;
   background: white;
   border-radius: 16px;
-  padding: 22px;
+  padding: 18px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   transition: 0.2s;
 }
 
 .social-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 .social-card i {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  margin-bottom: 8px;
 }
 
 .social-card h3 {
@@ -254,25 +253,20 @@ nav a:hover {
   font-size: 14px;
 }
 
-/* =========================
-   Footer
-========================= */
+/* Footer */
 
 footer {
   width: 100%;
   background: #111;
   color: white;
   text-align: center;
-  padding: 22px;
-  margin-top: 20px;
+  padding: 20px;
+  margin-top: 16px;
 }
 
-/* =========================
-   Mobile Navigation
-========================= */
+/* Switch to hamburger menu earlier */
 
-@media (max-width: 1200px) {
-
+@media (max-width: 1400px) {
   .menu-toggle {
     display: block;
   }
@@ -280,16 +274,17 @@ footer {
   nav {
     display: none;
     position: absolute;
-    top: 65px;
-    right: 20px;
+    top: 62px;
+    right: 8%;
     background: #111;
     width: 230px;
-    padding: 18px;
+    padding: 16px;
     border-radius: 12px;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    z-index: 1000;
+    z-index: 1001;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
   }
 
   nav.active {
@@ -300,33 +295,49 @@ footer {
     width: 100%;
   }
 
-  .resume-btn {
+  nav .resume-btn {
     width: auto;
+    padding: 7px 12px;
+    font-size: 14px;
+    border-radius: 18px;
   }
 }
 
-/* =========================
-   Tablet & Mobile
-========================= */
+/* Mobile */
 
 @media (max-width: 768px) {
-
   header {
-    padding: 14px 6%;
+    padding: 12px 6%;
   }
 
   .logo {
     font-size: 18px;
     max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  nav {
+    top: 58px;
+    right: 6%;
+    width: 220px;
   }
 
   .container {
-    padding: 14px 6%;
+    padding: 8px 6%;
   }
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 14px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
   }
 
   .hero-image {
@@ -334,15 +345,7 @@ footer {
   }
 
   .hero-image img {
-    width: 200px;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .hero h2 {
-    font-size: 18px;
+    width: 190px;
   }
 
   .section-title {
@@ -350,15 +353,20 @@ footer {
   }
 
   .card {
-    padding: 18px;
+    padding: 16px;
+    margin-bottom: 10px;
   }
 
   .project-img {
-    height: 150px;
+    height: 145px;
   }
 
   .social-grid {
     grid-template-columns: 1fr;
+  }
+
+  footer {
+    margin-top: 12px;
   }
 }
 ```
