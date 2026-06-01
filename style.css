@@ -140,6 +140,7 @@ footer {
   .hero {
     grid-template-columns: 1fr;
   }
+  
 
   nav {
     margin-top: 15px;
